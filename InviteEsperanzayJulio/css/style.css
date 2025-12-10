@@ -53,6 +53,13 @@ section.card {
   color: #4680AF;
 }
 
+.subtituloCards {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
 .subtituloFormulario {
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -61,7 +68,7 @@ section.card {
 
 .pSeccion {
   margin: 3px 0;
-  color: #729ec7;
+  color: #4680AF;
   text-transform: uppercase;
   font-size: 1.2rem;
 }
@@ -81,6 +88,13 @@ section.card {
     color: #4680AF;
   }
 
+  .subtituloCards {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
   .subtituloFormulario {
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -88,8 +102,8 @@ section.card {
   }
 
   .pSeccion {
-    margin: 3px 0;
-    color: #729ec7;
+    margin: 4px 0;
+    color: #4680AF;
     text-transform: uppercase;
     font-size: 0.6rem;
   }
@@ -157,9 +171,14 @@ header.hero {
     padding: 1.5rem;
     background-position: top center;
   }
+
+  .monograma {
+    width: 150px;
+    height: auto;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   header.hero {
     padding: 1rem;
     min-height: 60vh;
@@ -168,6 +187,11 @@ header.hero {
   header.hero .card {
     width: 90%;
     margin-bottom: 1rem;
+  }
+
+  .monograma {
+    width: 130px;
+    height: auto;
   }
 }
 
@@ -370,7 +394,6 @@ header.hero {
   background-image: url("../img/fondos_jye-08.png");
   background-size: cover;
   background-position: center;
-  padding: 6rem 1.5rem;
   border-radius: 12px;
   text-align: center;
 }
@@ -457,7 +480,7 @@ header.hero {
 
 .itinerary-frase {
   width: 100%;
-  max-width: 120px;
+  max-width: 100px;
   /* evita imágenes demasiado grandes */
   display: block;
   margin: 0 auto 20px;
@@ -491,11 +514,30 @@ header.hero {
 @media (max-width:600px) {
   #itinerary {
     text-align: center;
-    padding: 6rem 1.5rem;
+    padding: 3rem 0.5rem;
     background-image: url("../img/fondos_jye-10.png");
     background-size: cover;
     border-radius: 12px;
   }
+
+
+  .title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #2b6c94;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .time {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.8rem;
+    color: #2b6c94;
+  }
+
+
+
 
 }
 
@@ -544,7 +586,6 @@ header.hero {
 /* ------------------------------------ */
 #gallery {
   width: 100%;
-  padding: 80px 20px;
   background-image: url("../img/fondos_jye-10.png");
   background-size: cover;
   border-radius: 12px;
@@ -661,7 +702,7 @@ header.hero {
 .rsvp-form input:focus,
 .rsvp-form select:focus {
   border-color: #5d7ea0;
-  box-shadow: 0 0 6px rgba(240, 165, 0, 0.3);
+  box-shadow: 0 0 6px rgba(85, 152, 241, 0.3);
 }
 
 .rsvp-actions button {
@@ -677,9 +718,31 @@ header.hero {
 }
 
 .rsvp-actions button:hover {
-  background: #c17b00;
+  background: #2b6c94;
   transform: scale(1.05);
 }
+
+input::placeholder {
+  color: #7f7f7f;
+  font-size: 16px;
+  font-family: "Cormorant", serif;
+  opacity: 1;
+}
+
+select {
+  font-family: 'Cormorant', serif;
+  font-size: 16px;
+  color: #7f7f7f;
+  /* color normal */
+}
+
+#rsvpGuests {
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+  color: #7f7f7f;
+  /* color normal */
+}
+
 
 /* ------------------------------------ */
 /*                GIFTS                 */
@@ -687,7 +750,7 @@ header.hero {
 #gifts {
   text-align: center;
   width: 100%;
-  padding: 80px 20px;
+  padding: 60px 20px;
   background-image: url("../img/fondos_jye-10.png");
   background-size: cover;
   border-radius: 20px;
@@ -716,8 +779,13 @@ header.hero {
   margin: 0 auto 20px auto;
 }
 
-#liverpoolLink{
-  margin-top: 36px;;
+#liverpoolLink {
+  margin-top: 36px;
+  ;
+}
+
+.gift {
+  margin-top: 36px;
 }
 
 /* ------------------------------------ */
