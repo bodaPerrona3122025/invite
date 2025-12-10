@@ -103,7 +103,7 @@ document.getElementById("rsvpSend").addEventListener("click", function () {
   }
 
   // Número de WhatsApp donde llegará el mensaje (cámbialo por el tuyo)
-  const phoneNumber = "524651224100"; // ejemplo: 52155XXXXXXXX (incluye LADA sin + ni espacios)
+  const phoneNumber = "524493491941"; // ejemplo: 52155XXXXXXXX (incluye LADA sin + ni espacios)
 
   // Construir mensaje
   let message = `Hola, soy ${name}.%0A`;
@@ -117,6 +117,7 @@ document.getElementById("rsvpSend").addEventListener("click", function () {
   const url = `https://wa.me/${phoneNumber}?text=${message}`;
   window.open(url, "_blank");
 });
+
 
 
 
